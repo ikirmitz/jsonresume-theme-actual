@@ -15,6 +15,10 @@
       font-size: $font-size-xsmall;
       list-style: none;
 
+      p {
+        display: contents;
+      }
+
       &:before {
         content: "· ";
         vertical-align: middle;
@@ -22,17 +26,49 @@
     }
   }
 
+  .skills-honed {
+    text-transform: uppercase;
+    color: $mixcloud-teal;
+    font-size: $font-size-xsmall;
+    margin-top: $space-2;
+    margin-bottom: calc($space-1 / 2);
+  }
+
+  .hash {
+    font-style: normal;
+    opacity: 0.8;
+    font-weight: 700;
+    font-size: $font-size-xsmall;
+  }
+
+  .skill-pill {
+    border: 1px solid #ebf0f2;
+    border-radius: 2px;
+    color: #49596a;
+    display: inline-block;
+    // font-weight: 700;
+    font-size: $font-size-small;
+    line-height: 20px;
+    padding: 2px 6px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    text-transform: lowercase;
+   
+  }
+  
+
   .left {
     display: table-cell;
 
     .title {
       font-size: $font-size-large;
+      color: $mixcloud-teal;
       font-weight: bold;
       display: block;
     }
 
     .subtitle {
-      font-size: $font-size-medium;
+      font-size: $font-size-xsmall;
       font-weight: lighter;
       display: block;
     }

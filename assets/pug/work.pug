@@ -1,6 +1,6 @@
 if helper.validArray(resume.work)
   div(class='work margin-container-4')
-    p(class='section-title no-alone-2') Experience
+    p(class='section-title no-alone-2') Work Experience
     div(class='container')
       each work in resume.work
         div(class='article margin-container-3')
@@ -19,4 +19,12 @@ if helper.validArray(resume.work)
           if helper.validArray(work.highlights)
             ul(class='highlights margin-text-4 no-break')
               each highlight in work.highlights
-                li=highlight
+                li!=helper.mdToHtml(highlight)
+          if helper.validArray(work.skills)
+            div(class='skills-honed') Skills Honed
+            div
+              each skill in work.skills
+                span(class="skill-pill")
+                  em(class="hash") #
+                  =skill
+

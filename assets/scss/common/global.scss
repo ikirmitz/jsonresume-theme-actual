@@ -1,4 +1,6 @@
 @use "sass:color";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600;700&display=swap");
+@import url(http://db.onlinewebfonts.com/c/d51f9fbfbe485488603df19850941f1b?family=Sine+Sans+Medium);
 
 a {
   color: $text-color;
@@ -28,7 +30,7 @@ li {
   height: auto;
   padding: 0 50px;
   margin: 0 auto;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "DM Sans", sans-serif;
   color: $text-color;
 }
 
@@ -62,4 +64,6 @@ li {
   font-size: $font-size-xlarge;
   font-weight: normal;
   margin: 0 0 $space-2 0;
+  font-family: "Sine Sans Medium", sans-serif;
+  text-transform: uppercase;
 }

@@ -4,6 +4,7 @@ $content-width: 1000px;
 $content-main-percentage: 70%;
 $content-side-percentage: 100% - $content-main-percentage;
 
+$space-0: 0px;
 $space-1: 10px;
 $space-2: 20px;
 $space-3: 30px;
@@ -21,5 +22,14 @@ $font-size-medium: 16px;
 $font-size-small: 15px;
 $font-size-xsmall: 14px;
 
-$header-name-font-size: 80px;
-$header-line-font-size: 40px;
+$header-name-font-size: 60px;
+$header-line-font-size: 30px;
+
+
+
+// mixcloud accents
+$mixcloud-white: #fff;
+$mixcloud-peach: #f3b2a6;
+$mixcloud-darkblue: #1e2337;
+$mixcloud-blue: #5000ff;
+$mixcloud-teal: #4fa6d3;

@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /* Workaround for 'break-before:avoid' */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600;700&display=swap");
+@import url(http://db.onlinewebfonts.com/c/d51f9fbfbe485488603df19850941f1b?family=Sine+Sans+Medium);
 * {
   margin: 0;
   padding: 0;
@@ -53,7 +55,7 @@ li:first-child {
   height: auto;
   padding: 0 50px;
   margin: 0 auto;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "DM Sans", sans-serif;
   color: #222222;
 }
 
@@ -84,6 +86,8 @@ li:first-child {
   font-size: 26px;
   font-weight: normal;
   margin: 0 0 20px 0;
+  font-family: "Sine Sans Medium", sans-serif;
+  text-transform: uppercase;
 }
 
 .margin-container-2:not(:first-child) {
@@ -99,7 +103,7 @@ li:first-child {
 }
 
 .padding-container-2 {
-  padding: 20px 0;
+  padding: 20px 0px;
 }
 
 .margin-text-1 {
@@ -218,20 +222,49 @@ li:first-child {
   font-size: 14px;
   list-style: none;
 }
+.main .highlights li p {
+  display: contents;
+}
 .main .highlights li:before {
   content: "· ";
   vertical-align: middle;
+}
+.main .skills-honed {
+  text-transform: uppercase;
+  color: #4fa6d3;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.main .hash {
+  font-style: normal;
+  opacity: 0.8;
+  font-weight: 700;
+  font-size: 14px;
+}
+.main .skill-pill {
+  border: 1px solid #ebf0f2;
+  border-radius: 2px;
+  color: #49596a;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 2px 6px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  text-transform: lowercase;
 }
 .main .left {
   display: table-cell;
 }
 .main .left .title {
   font-size: 18px;
+  color: #4fa6d3;
   font-weight: bold;
   display: block;
 }
 .main .left .subtitle {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: lighter;
   display: block;
 }
@@ -245,22 +278,34 @@ li:first-child {
   white-space: nowrap;
 }
 
+.basics .header {
+  background-color: #fff;
+}
+.basics .summary {
+  background-color: #5000ff;
+  color: #fff;
+  font-size: 16px;
+  padding: 20px;
+}
 .basics .main {
   vertical-align: middle;
 }
 .basics .main .name {
-  font-size: 80px;
+  font-family: "Sine Sans Medium", sans-serif;
+  font-size: 60px;
   line-height: 1em;
   font-weight: bold;
   display: block;
-  margin-left: -5.6px;
+  margin-left: -4.2px;
+  color: #1e2337;
 }
 .basics .main .label {
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1em;
   font-weight: lighter;
+  color: #f3b2a6;
   display: block;
-  margin-left: -1.6px;
+  margin-left: -1.2px;
 }
 .basics .side {
   vertical-align: middle;
@@ -271,7 +316,7 @@ li:first-child {
   list-style-type: none;
 }
 .basics .side .contact li {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.6em;
 }
 
